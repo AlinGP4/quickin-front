@@ -1,0 +1,21 @@
+div {
+    width: 300px;
+    display: flex;
+    padding: 8px;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    background-color: #202B2D;
+    transition: .5s ease;
+    color: white;
+    font-weight: bold;
+    font-size: 1.4rem;
+
+    &:hover:not(.active) {
+        background-color: #273234;
+    }
+}
+
+.active {
+    background-color: #192426;
+}
