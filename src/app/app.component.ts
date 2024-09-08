@@ -122,6 +122,7 @@ export class AppComponent {
     this.apiService.removeCategory(this.api, id).subscribe({
       next: () => {
         this.listCategories = this.listCategories.filter((el) => el.id != id);
+        this.listProducts = this.listProducts.filter((el) => el.category?.id != id);
       }
     })
   }
