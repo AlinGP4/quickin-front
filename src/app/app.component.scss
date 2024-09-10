@@ -10,11 +10,43 @@
     display: flex;
 }
 
+.swagger {
+    padding: 24px;
+    background-color: #192426;
+    display: flex;
+    gap: 10%;
+
+    a {
+        width: 45%;
+        display: block;
+        text-decoration: none;
+        background-color: #202B2D;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border: none;
+       
+        cursor: pointer;
+        transition: .1s ease;
+        border-radius: 5px;
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 34px;
+        }
+
+        &:active {
+            box-shadow: none;
+        }
+    }
+}
+
 .form {
     border-radius: 0 0 10px 10px;
 
     background-color: #192426;
     padding: 24px;
+    padding-top: 0;
 
     label {
         display: flex;
@@ -52,7 +84,6 @@
     }
 
     &__header {
-        margin-top: 24px;
         margin-bottom: 16px;
         background-color: #0D181A;
         font-weight: 600;

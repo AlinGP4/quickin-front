@@ -45,11 +45,8 @@ export class AppComponent {
     this.button$.subscribe({
       next: (api: 'nestjs' | 'nodejs' | 'symfony') => {
         switch (api) {
-          case 'nodejs':
-            this.api = 'http://localhost:3100'
-            break;
           case 'symfony':
-            this.api = 'http://localhost:3200'
+            this.api = 'http://localhost:8000/api'
             break;
           default:
             this.api = 'http://localhost:3000'
